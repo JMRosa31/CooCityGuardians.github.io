@@ -1,0 +1,402 @@
+.navbar ul{
+    list-style-type:none; /*Quita los bullets points*/  
+}
+
+.Logo a{
+    text-decoration: none;
+}
+    *{
+        box-sizing: border-box;
+}
+
+    body{
+    margin:10px;
+    padding: 0px; /*le genera un border a la pagina*/
+    background-color: #f1f1f1
+}
+
+ 
+    /*Parámetros del box invisible que contiene la foto de la página*/
+    .icon{
+        width: 100%;
+        background-color:transparent;
+        height:600px;
+        text-align:center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 50px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+          
+}
+
+    .Logo { /*Esto es relacionado al texto encima de la foto para poder centralizarlo mas o menos*/
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+}
+
+    /*Parámetros del tamaño de la foto de la página*/
+    .icon img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        
+}
+    
+
+    /*Parámetros de los links contenidos dentro del menu box*/
+    .menunavbar a{
+        float: left;
+        display: flex;
+        color: #111;
+        text-align:center;
+        padding: 1px 10px 10px 10px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;       
+}
+
+    /*Parámetros del box del menu*/
+    .menunavbar{
+        overflow:hidden;
+        background-color:#f2ffe6; /*Ahora mismo esta apagado el overflow, por eso no funciona el color*/
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right:1px solid black;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 80px;
+        font-size: 20px;
+        align-content: center;
+}
+
+    /*Hover function*/
+    .menunavbar a:hover{
+        background-color: transparent;
+        color: #3cb371;
+        font-size: 30px;
+        
+}
+
+        .HeatIslandEffectDiagram-Box{
+        width:100%;
+        height: 110px;
+        margin-bottom: 15px;
+        margin-top:15px;
+        display: flex;
+        background-color:#ffccb3;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+        .HeatIslandEffect{
+        width: 100%;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 60px;
+        align-content: center;
+        justify-content: center;
+            
+}
+
+    .Bodycontent-Parent-Box1{
+        width:100%;
+        min-height: 700px;
+        margin-bottom: 0px;
+        display: flex;            /*Usando flex, justify y align center me resuelve el problema de centralizar los dos box*/
+        justify-content: center;
+        background-color:#ff5800;
+        
+}
+                .Colum2{
+                    width:45%;
+                    height: 700px;
+                    margin-right: 15px;
+                    background-color:transparent;
+                    margin-top: 15px;
+                    border-radius: 20px;
+                    align-content: center;
+                    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    overflow: hidden;           
+}
+                .Colum2 img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .Colum1{
+                    width:20%;
+                    height: 400px;
+                    background-color:white;
+                    margin-top: 15px;
+                    border-radius: 20px;
+                    padding:15px;
+                    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    overflow: hidden;
+}
+                .Colum1 p{
+                font-size: 22px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: left;
+                }
+
+
+    .SolutionDiagram-Box{
+        width:100%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        height: 110px;
+        align-content: center;
+        
+    
+}
+
+            .Solution{
+            align-content: center;
+            justify-content: center;
+            background-color:white;
+            border-radius: 30px;
+            height: 110px;
+            width:100%;
+            text-align: center;
+            font-size: 60px;
+            font-family:Arial, Helvetica, sans-serif;
+            box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+    .BodyContainer::after{
+    content:"";
+    display:table; 
+    clear: both;
+}
+
+    .Bodycontent-Parent-Box2{
+        width:100%;
+        min-height: 700px;
+        margin-bottom: 15px;
+        display:flex;
+        justify-content: center;
+        background-color:#ff5800;
+}
+                .Colum4{
+                    width:20%;
+                    height: 400px;
+                    margin-right: 15px;                  
+                    background-color: white;
+                    margin-top: 15px;
+                    border-radius: 20px;
+                    padding: 15px;
+                    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    text-align: right;
+}
+                    .Colum4 p{
+                    font-size: 22px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    text-align: right;
+                    }
+
+                .Colum3{
+                    width:45%;
+                    height: 670px;
+                    background-color: white;
+                    margin-top: 15px;
+                    border-radius: 20px;
+                    text-align: center;
+                    align-content: center;
+                    font-size: 30px;
+                    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    overflow: hidden;
+}
+
+                .Colum3 img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+        
+}
+
+    .LearnMore-container{
+        width:100%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    
+}
+
+    .Learn-box{
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 20px;
+        height: 40px;
+        width:65%;
+        text-align: center;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+}
+    .Content-box{
+        width:100%;
+        height: 400px; 
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+}
+
+        
+        .content1, .content2, .content3{
+        display: flex;
+        width: 21.4%;
+        height: 400px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin-left:15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        overflow: hidden;   
+}
+
+                        .content1 img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        }
+
+                        .content2 img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        }
+
+                        .content3 img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        }
+
+
+        .Content-box2{
+        width:100%;
+        height: 50px; 
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        }
+        
+        .content4, .content5, .content6{
+        display: flex;
+        width: 21.4%;
+        height: 35px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin-left:15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        color: #59b300;
+        background-color: #f2ffe6;
+        }
+    
+
+.homepurpose-container{
+display: flex;
+width: 100%;
+height: 600px;
+margin-top:15px;
+justify-content: center;
+background-color:transparent;
+overflow: hidden;
+border-radius: 20px;
+align-content: center;
+
+}
+
+.purpose{
+width:40%;
+height:570px;
+margin-top:15px;
+background-color:transparent;
+align-content:center;
+text-align: center;
+border-radius:20px;
+font-size: 45px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color:white;
+font-weight: bold;
+position:absolute;
+word-wrap: break-all;      
+}
+
+
+.homepurpose-container img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.solution-container{
+width: 100%;
+min-height: 700px;
+display: flex;
+background-color: transparent;
+justify-content: center;
+}
+
+        .Colum6{
+        width: 45%;  
+        height: 680px; 
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-right:15px;
+        margin-left: 15px;
+        border-radius:20px;
+        align-content: center;
+        overflow: hidden;
+        }
+
+        .Colum6 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        
+        }
+
+        .Colum5{
+        width: 20%;
+        height: 680px;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+        padding: 15px;
+        }
+
+        .Colum5 p{
+        font-size: 22px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: left;
+        }
+
+        .Colum5 h1{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
